@@ -1,3 +1,26 @@
+## grpc (kinetic) - 0.0.10-0
+
+The packages in the `grpc` repository were released into the `kinetic` distro by running `/usr/local/bin/bloom-release grpc --rosdistro kinetic` on `Wed, 26 Sep 2018 17:26:33 -0000`
+
+The `grpc` package was released.
+
+Version of package(s) in repository `grpc`:
+
+- upstream repository: https://github.com/CogRob/catkin_grpc.git
+- release repository: https://github.com/CogRobRelease/catkin_grpc-release.git
+- rosdistro version: `0.0.9-0`
+- old version: `0.0.8-0`
+- new version: `0.0.10-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.7`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## grpc (indigo) - 0.0.10-0
 
 The packages in the `grpc` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release grpc --rosdistro indigo` on `Wed, 26 Sep 2018 17:16:23 -0000`
