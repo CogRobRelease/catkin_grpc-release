@@ -1,3 +1,26 @@
+## grpc (indigo) - 0.0.10-0
+
+The packages in the `grpc` repository were released into the `indigo` distro by running `/usr/local/bin/bloom-release grpc --rosdistro indigo` on `Wed, 26 Sep 2018 17:16:23 -0000`
+
+The `grpc` package was released.
+
+Version of package(s) in repository `grpc`:
+
+- upstream repository: https://github.com/CogRob/catkin_grpc.git
+- release repository: https://github.com/CogRobRelease/catkin_grpc-release.git
+- rosdistro version: `0.0.9-1`
+- old version: `0.0.9-1`
+- new version: `0.0.10-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.7`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## grpc (melodic) - 0.0.9-2
 
 The packages in the `grpc` repository were released into the `melodic` distro by running `/usr/local/bin/bloom-release --rosdistro melodic --track melodic grpc` on `Mon, 02 Jul 2018 23:25:03 -0000`
