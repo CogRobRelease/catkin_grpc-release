@@ -1,3 +1,26 @@
+## grpc (noetic) - 0.0.10-1
+
+The packages in the `grpc` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --rosdistro noetic --track noetic grpc --edit` on `Wed, 15 Dec 2021 18:36:45 -0000`
+
+The `grpc` package was released.
+
+Version of package(s) in repository `grpc`:
+
+- upstream repository: https://github.com/CogRob/catkin_grpc.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.0.10-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## grpc (melodic) - 0.0.10-0
 
 The packages in the `grpc` repository were released into the `melodic` distro by running `/usr/local/bin/bloom-release grpc --rosdistro melodic` on `Wed, 26 Sep 2018 17:30:00 -0000`
