@@ -2,6 +2,11 @@
 Changelog for package grpc
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.12 (2023-05-11)
+-------------------
+* Removed cronet dependencies (`#47 <https://github.com/CogRob/catkin_grpc/issues/47>`_)
+* Contributors: Friedrich M. Rockenbauer
+
 0.0.11 (2022-06-02)
 -------------------
 * Update package.xml
