@@ -1,3 +1,26 @@
+## grpc (noetic) - 0.0.16-2
+
+The packages in the `grpc` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic grpc` on `Thu, 20 Feb 2025 20:14:32 -0000`
+
+The `grpc` package was released.
+
+Version of package(s) in repository `grpc`:
+
+- upstream repository: https://github.com/CogRob/catkin_grpc.git
+- release repository: https://github.com/CogRobRelease/catkin_grpc-release.git
+- rosdistro version: `0.0.16-1`
+- old version: `0.0.16-1`
+- new version: `0.0.16-2`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## grpc (noetic) - 0.0.16-1
 
 The packages in the `grpc` repository were released into the `noetic` distro by running `/usr/bin/bloom-release grpc --rosdistro noetic` on `Fri, 31 Jan 2025 17:17:01 -0000`
