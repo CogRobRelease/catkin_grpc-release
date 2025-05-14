@@ -1,0 +1,12 @@
+Source: ros-noetic-grpc
+Section: misc
+Priority: optional
+Maintainer: Shengye Wang <shengye@ucsd.edu>
+Build-Depends: debhelper (>= 9.0.0), autoconf, git, libltdl-dev, libssl-dev, libtool, libtool-bin, ros-one-catkin, rsync, zlib1g-dev
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-grpc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libssl-dev, rsync, zlib1g-dev
+Description: Catkinized gRPC Package
