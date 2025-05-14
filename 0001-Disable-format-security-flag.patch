@@ -1,4 +1,4 @@
-From d2867ef080269ed7f16aeaae2143beebf3560c71 Mon Sep 17 00:00:00 2001
+From 8cd2eb5038c79ed17304c0f58c45c961456eb22b Mon Sep 17 00:00:00 2001
 From: Ryohei Ueda <r.ueda@gitai.tech>
 Date: Thu, 20 Feb 2025 11:42:59 -0800
 Subject: [PATCH] Disable format-security flag
@@ -8,7 +8,7 @@ Subject: [PATCH] Disable format-security flag
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/debian/rules.em b/debian/rules.em
-index 276329d..be30cc5 100755
+index 276329db..be30cc53 100755
 --- a/debian/rules.em
 +++ b/debian/rules.em
 @@ -16,7 +16,7 @@ export LDFLAGS=
@@ -21,5 +21,5 @@ index 276329d..be30cc5 100755
  	BUILD_TESTING_ARG=-DBUILD_TESTING=OFF -DCATKIN_ENABLE_TESTING=OFF
  endif
 -- 
-2.25.1
+2.43.0
 
