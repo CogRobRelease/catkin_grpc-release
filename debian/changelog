@@ -1,0 +1,112 @@
+ros-noetic-test-grpc (0.0.17-1focal) focal; urgency=high
+
+  * Allow users settings CXX standard (#63 <https://github.com/CogRob/catkin_grpc/issues/63>)
+  * Exclude unsecure library from exported libraries (#62 <https://github.com/CogRob/catkin_grpc/issues/62>)
+  * Fix bug in realpath (#61 <https://github.com/CogRob/catkin_grpc/issues/61>)
+  * Depend on roscpp (#59 <https://github.com/CogRob/catkin_grpc/issues/59>)
+  * Set the right version for test_grpc
+  * Add CHANGELOG.rst for test_grpc
+  * Add package to test grpc (#57 <https://github.com/CogRob/catkin_grpc/issues/57>)
+    * Add package to test grpc
+    * Enable Github Actions
+    * support realpath on cmake <3.19
+  * Contributors: Ryohei Ueda, Yuki Furuta
+  * Add package to test grpc (#57 <https://github.com/CogRob/catkin_grpc/issues/57>)
+    * Add package to test grpc
+    * Enable Github Actions
+    * support realpath on cmake <3.19
+  * Contributors: Yuki Furuta
+
+ -- Yuki Furuta <furushchev@gmail.com>  Wed, 14 May 2025 07:00:00 -0000
+
+ros-noetic-test-grpc (0.0.16-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Fri, 31 Jan 2025 08:00:00 -0000
+
+ros-noetic-test-grpc (0.0.15-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Tue, 28 Jan 2025 08:00:00 -0000
+
+ros-noetic-test-grpc (0.0.14-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Fri, 24 Jan 2025 08:00:00 -0000
+
+ros-noetic-test-grpc (0.0.13-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Fri, 17 Jan 2025 08:00:00 -0000
+
+ros-noetic-test-grpc (0.0.12-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Thu, 11 May 2023 07:00:00 -0000
+
+ros-noetic-test-grpc (0.0.11-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Thu, 02 Jun 2022 07:00:00 -0000
+
+ros-noetic-test-grpc (0.0.10-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Wed, 26 Sep 2018 07:00:00 -0000
+
+ros-noetic-test-grpc (0.0.9-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Thu, 19 Apr 2018 06:33:00 -0000
+
+ros-noetic-test-grpc (0.0.8-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Thu, 19 Apr 2018 06:07:00 -0000
+
+ros-noetic-test-grpc (0.0.7-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Thu, 19 Apr 2018 01:13:00 -0000
+
+ros-noetic-test-grpc (0.0.6-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Mon, 20 Nov 2017 08:00:00 -0000
+
+ros-noetic-test-grpc (0.0.5-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Fri, 06 Oct 2017 07:00:00 -0000
+
+ros-noetic-test-grpc (0.0.4-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Mon, 02 Oct 2017 07:00:00 -0000
+
+ros-noetic-test-grpc (0.0.3-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Sat, 30 Sep 2017 07:00:00 -0000
+
+ros-noetic-test-grpc (0.0.2-1focal) focal; urgency=high
+
+
+
+ -- Yuki Furuta <furushchev@gmail.com>  Tue, 05 Sep 2017 07:00:00 -0000
+
+

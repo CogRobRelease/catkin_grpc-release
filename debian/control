@@ -1,0 +1,12 @@
+Source: ros-noetic-test-grpc
+Section: misc
+Priority: optional
+Maintainer: Yuki Furuta <furushchev@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-one-catkin, ros-one-grpc, ros-one-roscpp, ros-one-rostest <!nocheck>
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-test-grpc
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-one-grpc, ros-one-roscpp
+Description: A package for testing the grpc package
