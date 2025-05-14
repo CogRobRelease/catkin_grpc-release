@@ -2,7 +2,9 @@ cmake_minimum_required(VERSION 3.8.2)
 include(ExternalProject)
 project(grpc)
 
-add_compile_options(-std=c++11)
+if(NOT DEFINED CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
 
 find_package(catkin REQUIRED)
 
@@ -15,18 +17,24 @@ if(NOT RSYNC)
   message(SEND_ERROR "Cannot find rsync.")
 endif(NOT RSYNC)
 
+set(GRPC_BUILD_SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/grpc_build")
 set(GRPC_BUILD_INSTALL_DIR ${CMAKE_CURRENT_BINARY_DIR}/grpc_install)
 ExternalProject_Add(
   build_grpc
   PREFIX grpc
-  GIT_REPOSITORY "https://github.com/grpc/grpc.git"
-  GIT_TAG v1.48.4
-  GIT_CONFIG submodule.recurse=1 submodule.fetchJobs=10
-  GIT_SHALLOW 1
-  SOURCE_DIR grpc_build
+
+  # Copy grpc submodule to build directory to use artifact objects in the source directory.
+  # BUILD_IN_SOURCE 1 allows ExternalProject_Add() to generates the artifact objects in the
+  # source directory.
+  DOWNLOAD_COMMAND
+  ${RSYNC}
+  --prune-empty-dirs --archive
+  ${CMAKE_SOURCE_DIR}/grpc/ ${GRPC_BUILD_SOURCE_DIR}/
+
+  SOURCE_DIR ${GRPC_BUILD_SOURCE_DIR}
+
   CMAKE_ARGS
   -DBUILD_SHARED_LIBS=ON
-  -DBUILD_TESTING=OFF
   -DCARES_SHARED=ON
   -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
   -DCMAKE_INSTALL_PREFIX=${GRPC_BUILD_INSTALL_DIR}
@@ -81,13 +89,13 @@ add_custom_command(
     ${RSYNC}
       --prune-empty-dirs --archive
       --include="*/" --include="*.proto" --exclude="*"
-      ${CMAKE_CURRENT_BINARY_DIR}/grpc_build/src/proto/
+      ${GRPC_BUILD_SOURCE_DIR}/src/proto/
       ${GRPC_INCLUDE_DESTINATION}/src/proto/
   COMMAND
     ${RSYNC}
       --prune-empty-dirs --archive
       --include="*/" --include="*.h" --exclude="*"
-      ${CMAKE_CURRENT_BINARY_DIR}/grpc_build/gens/src/proto/
+      ${GRPC_BUILD_SOURCE_DIR}/gens/src/proto/
       ${GRPC_INCLUDE_DESTINATION}/src/proto/
   COMMAND
     ${RSYNC}
@@ -99,7 +107,7 @@ add_custom_command(
     ${RSYNC}
       --prune-empty-dirs --archive
       --include="*/" --include="*.h" --include="*.inc" --include="*.proto" --exclude="*"
-      ${CMAKE_CURRENT_BINARY_DIR}/grpc_build/third_party/protobuf/src/
+      ${GRPC_BUILD_SOURCE_DIR}/third_party/protobuf/src/
       ${GRPC_INCLUDE_DESTINATION}/
   COMMAND
     ${RSYNC}
